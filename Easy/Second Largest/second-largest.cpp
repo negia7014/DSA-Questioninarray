@@ -14,7 +14,9 @@ public:
 	    int firstlarg=-1;
 	    int secondlarg=-1;
 	    for(int i=0;i<n;i++){
-	        firstlarg=max(firstlarg,arr[i]);
+	        if(arr[i]>firstlarg){
+	            firstlarg=arr[i];
+	        }
 	    }
 	    for(int i=0;i<n;i++){
 	        if(arr[i]!=firstlarg){
