@@ -26,13 +26,13 @@ class Solution {
     // Function to count nodes of a linked list.
     public int getCount(Node head) {
         // code here
-        int size=0;
-        Node temp=head;
+        int count =0;
+        Node temp =head;
         while(temp!=null){
-            temp=temp.next;
-            size++;
+            count++;
+            temp = temp.next;
         }
-        return size;
+    return count;
     }
 }
 
